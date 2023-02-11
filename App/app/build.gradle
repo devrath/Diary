@@ -71,9 +71,9 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
 
     // Mongo DB Realm
-    implementation ('org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4') {
+    implementation ('org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0-native-mt') {
         version {
-            strictly("1.6.4")
+            strictly("1.6.0-native-mt")
         }
     }
     implementation "io.realm.kotlin:library-sync:1.0.2"
