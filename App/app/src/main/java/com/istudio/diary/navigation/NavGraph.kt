@@ -8,6 +8,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import com.istudio.diary.presentation.screens.auth.AuthenticationScreen
 import com.istudio.diary.util.Constants.WRITE_SCREEN_ARGUMENT_KEY
 
 /**
@@ -33,7 +34,9 @@ fun SetupNavGraph(
 fun NavGraphBuilder.authenticationRoute(){
     composable(route = Screen.Authentication.route){
         // Here there will be the contents of the screen
+        AuthenticationScreen(loadingState = false){
 
+        }
     }
 }
 

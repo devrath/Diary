@@ -66,7 +66,7 @@ fun GoogleButton(
         color = backgroundColor
     ) {
         Row(
-            modifier = Modifier
+            modifier = modifier
                 .fillMaxWidth()
                 .padding(12.dp)
                 .animateContentSize(
@@ -94,7 +94,7 @@ fun GoogleButton(
 
             if (loadingState) {
                 // Display the loader if the loading state is true
-                Spacer(modifier = Modifier.width(16.dp))
+                Spacer(modifier = modifier.width(16.dp))
                 CircularProgressIndicator(
                     modifier = Modifier.size(16.dp),
                     strokeWidth = 2.dp,
